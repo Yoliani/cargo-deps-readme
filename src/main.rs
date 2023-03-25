@@ -40,7 +40,7 @@ lazy_static::lazy_static! {
             info!("{}{}", "idx: ", idx);
             for (idx2, c2) in contents.lines().enumerate() {
                 if idx2 > idx && c2.contains("=")  {
-                        let mut dep = c2.split("=").collect::<Vec<&str>>();
+                        let dep = c2.split("=").collect::<Vec<&str>>();
                         deps.push(dep[0].to_string().split(" ").collect::<Vec<&str>>()[0].to_string());
                 }
             }
