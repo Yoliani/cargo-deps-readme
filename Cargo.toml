@@ -1,8 +1,19 @@
 [package]
-name = "cargo-deps-readme"
+name = "deps-readme"
 version = "0.1.0"
 edition = "2021"
 authors = ["Yoliani"]
+license = "MIT"
+license-file = "LICENSE"
+description = "A tool to generate a README.md file with the dependencies of a Rust project"
+repository = "https://github.com/Yoliani/cargo-deps-readme"
+readme = "README.md"
+keywords = ["cargo", "dependencies", "readme"]
+categories = ["command-line-utilities"]
+documentation = "https://docs.rs/cargo-deps-readme"
+homepage = "https://github.com/Yoliani/cargo-deps-readme"
+exclude = ["**/tests/**"]
+
 
 [dependencies]
 reqwest = { version = "0.11", features = ["json", "blocking"] }

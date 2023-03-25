@@ -2,11 +2,10 @@ extern crate env_logger;
 #[cfg_attr(test, macro_use)]
 extern crate log;
 
-
 use std::fs::File;
 
-use cargo_deps_readme::entities::Crate;
-use cargo_deps_readme::entities::CrateApiEntity;
+use deps_readme::entities::Crate;
+use deps_readme::entities::CrateApiEntity;
 use log::info;
 use reqwest::Client as ReqwestClient;
 use reqwest::header;
