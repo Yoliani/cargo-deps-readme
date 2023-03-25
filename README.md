@@ -14,7 +14,7 @@ cargo-deps-readme = "0.1.0"
 Run the following command to generate the README.md file:
 
 ```
-cargo deps-readme
+deps-readme
 ```
 
 This will create a new DEPENDECIES.md file with a list of all the dependencies specified in your Cargo.toml file.
